@@ -1,4 +1,11 @@
 
+nav,
+div,
+header,
+.photo-caption {
+  border: solid 2px black;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,11 +21,13 @@ header {
   padding-left: 30px;
   color: MediumAquamarine;
   flex-grow: 1;
+
 }
 
 nav {
   padding-right: 30px;
   flex-flow: row wrap;
+
 }
 
 span {
@@ -28,4 +37,14 @@ span {
 
 a {
   color: Black;
+}
+
+main {
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.left-page {
+  flex-flow: column nowrap;
 }
