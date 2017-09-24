@@ -41,10 +41,24 @@ a {
 
 main {
   display: flex;
-  
+
   justify-content: space-between;
 }
 
-.left-page {
+.large-column,
+.medium-column,
+.small-column {
   flex-flow: column nowrap;
+}
+
+.large-column {
+  width: 630px;
+}
+
+.medium-column {
+  width: 300px;
+}
+
+.small-column {
+  width: 240px;
 }
