@@ -1,9 +1,8 @@
 
 nav,
 div,
-header,
-.photo-caption {
-  border: solid 2px black;
+header {
+  border: 1px solid black;
 }
 
 header {
@@ -30,7 +29,7 @@ nav {
 
 }
 
-span {
+nav span {
   display: inline-block;
   padding-left: 20px;
 }
@@ -41,24 +40,56 @@ a {
 
 main {
   display: flex;
-
   justify-content: space-between;
 }
 
-.large-column,
-.medium-column,
-.small-column {
-  flex-flow: column nowrap;
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
-.large-column {
+.column.large {
   width: 630px;
 }
 
-.medium-column {
+.column.medium {
   width: 300px;
 }
 
-.small-column {
+.column.small {
   width: 240px;
+}
+
+.photo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.lead-story .photo-content {
+  background-image: url("../images/img-story-main-phishconcert.png");
+  font-size: 40px;
+}
+
+.earth-spins.photo-content {
+  background-image: url("../images/img-story-2-earthspins.png");
+}
+
+.camera.photo-content {
+  background-image: url("../images/img-story-3-cameraerase.png");
+}
+
+.catincontrol.photo-content {
+  background-image: url("../images/img-story-1-girlandcat.png");
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
