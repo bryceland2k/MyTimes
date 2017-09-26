@@ -1,9 +1,4 @@
 
-nav,
-div,
-header {
-  border: 1px solid black;
-}
 
 header {
   display: flex;
@@ -12,6 +7,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  border-bottom: 1px solid black;
   }
 
 .logo {
@@ -46,34 +42,40 @@ main {
 .column {
   display: flex;
   flex-direction: column;
+
 }
 
 .column.large {
   width: 630px;
+  margin-right: 32px;
 }
 
 .column.medium {
   width: 300px;
+  margin-right: 32px;
 }
 
 .column.small {
   width: 240px;
+  margin-right: 32px;
 }
 
 .photo-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  text-align: center;
 }
 
 .lead-story .photo-content {
   background-image: url("../images/img-story-main-phishconcert.png");
   font-size: 40px;
+  text-align: left;
 }
 
 .earth-spins.photo-content {
@@ -92,4 +94,31 @@ main {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+.stories {
+  display: flex;
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .news-bites h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+.news-bites span {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: block;
+  padding: 10px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
 }
