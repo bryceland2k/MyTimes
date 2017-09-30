@@ -10,7 +10,7 @@ header {
   border-bottom: 1px solid black;
   }
 
-.logo {
+header .logo {
   display: flex;
   align-items: center;
   padding-left: 30px;
@@ -121,4 +121,16 @@ main {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
+}
+
+footer {
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
 }
